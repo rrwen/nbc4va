@@ -1,7 +1,7 @@
 Package: nbc4va
 Type: Package
 Title: Bayes Classifier for Verbal Autopsy Data
-Version: 1.2
+Version: 1.1
 Date: 2018-07-26
 Author: Richard Wen <rrwen.dev@gmail.com>
 Maintainer: Richard Wen <rrwen.dev@gmail.com>
@@ -15,6 +15,9 @@ Imports:
     methods,
     utils
 Suggests:
+    bookdown,
+    knitr,
+    rmarkdown,
     shiny,
     testthat
 Enhances: openVA
@@ -31,3 +34,4 @@ Collate:
     'nbc4va_help.R'
     'nbc4va_utility.R'
     'nbc4va_wrapper.R'
+VignetteBuilder: knitr

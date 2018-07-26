@@ -26,14 +26,14 @@ Once the GUI is loaded, follow the instructions to fit a NBC model to your \file
 \subsection{Sample Code for GUI}{
   Run the following code using \code{\link{nbc4vaGUI}} in the R console to open the GUI in your web browser.\cr\cr
   Close the GUI by pressing escape while you are in the R console.
-\preformatted{
+  \preformatted{
 --------------------------------------------------------------------------------------------------
 
     library(nbc4va)  # load the package
     nbc4vaGUI()  # open the GUI in your web browser
 
 --------------------------------------------------------------------------------------------------
-}
+  }
 }
 \subsection{References for GUI}{
   \itemize{
@@ -60,7 +60,7 @@ The saved results will in a selected directory with four CSV files detailing the
 }
 \subsection{Sample Code for File Input and Output}{
   Run the following code using \code{\link{nbc4vaIO}} in the R console to produce NBC model performance results with the \file{training} and \file{testing} files.
-\preformatted{
+  \preformatted{
 --------------------------------------------------------------------------------------------------
 
     library(nbc4va)
@@ -73,7 +73,7 @@ The saved results will in a selected directory with four CSV files detailing the
     nbc4vaIO(trainFile, testFile, known=TRUE)  # set known to indicate whether testing causes are known
 
 --------------------------------------------------------------------------------------------------
-}
+  }
 }
 \subsection{References for File Input and Output}{
   \itemize{

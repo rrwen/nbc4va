@@ -76,14 +76,22 @@ The imputation is applied as follows:
 The symptom imputation method preserves the approximate distribution of the known values in an attempt to avoid dropping entire cases or symptoms.
 }
 
-\examples{
-library(nbc4va)  # load the nbc4va package
-data(nbc4vaData)  # load the example data
-View(nbc4vaData)  # view the sample data in the nbc4va package
-data(nbc4vaDataRaw)  # load the example data with unknown symptom values
-View(nbc4vaDataRaw)  # view the sample data with unknown symptom values
+\section{Sample Code}{
 
+Run the following code using \code{\link{nbc4vaData}} in the R console to view the example data included in the nbc4va package.
+\preformatted{
+--------------------------------------------------------------------------------------------------
+
+    library(nbc4va)  # load the nbc4va package
+    data(nbc4vaData)  # load the example data
+    View(nbc4vaData)  # view the sample data in the nbc4va package
+    data(nbc4vaDataRaw)  # load the example data with unknown symptom values
+    View(nbc4vaDataRaw)  # view the sample data with unknown symptom values
+
+--------------------------------------------------------------------------------------------------
 }
+}
+
 \seealso{
 Guide for package: \code{\link{nbc4va}}
 

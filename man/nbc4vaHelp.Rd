@@ -28,20 +28,25 @@ the functions below to view the help pages or call them which produces the same 
   \item \code{\link{nbc4vaHelpFunctions}}: opens the help page for an organized list of useful functions in the package
   \item \code{\link{nbc4vaHelpDev}}: opens the developer help page for function and package dependencies
 }
+\subsection{Sample Code for Opening Help Documentation}{
+  Run the following code using \code{\link{nbc4vaHelp}} in the R console to conveniently open up a variety of help pages.
+  \preformatted{
+--------------------------------------------------------------------------------------------------
+
+    library(nbc4va)  # load the nbc4va package
+    nbc4vaHelp()  # view this help page
+    nbc4vaHelpMethods()  # view methods and implementation help page
+    nbc4vaHelpData()  # view input train/test data formatting  help page
+    nbc4vaHelpBasic()  # view graphical or file interface help page
+    nbc4vaHelpAdvanced()  # view usage in R help page
+    nbc4vaHelpFunctions()  # view help page of useful functions
+    nbc4vaHelpDev()  # view developer help page
+
+--------------------------------------------------------------------------------------------------
+  }
+}
 }
 
-\examples{
-# Run in the R console to open help pages
-library(nbc4va)  # load the nbc4va package
-nbc4vaHelp()  # view this help page
-nbc4vaHelpMethods()  # view methods and implementation help page
-nbc4vaHelpData()  # view input train/test data formatting  help page
-nbc4vaHelpBasic()  # view graphical or file interface help page
-nbc4vaHelpAdvanced()  # view usage in R help page
-nbc4vaHelpFunctions()  # view help page of useful functions
-nbc4vaHelpDev()  # view developer help page
-
-}
 \seealso{
 Guide for package: \code{\link{nbc4va}}
 

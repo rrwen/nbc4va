@@ -4,76 +4,15 @@
 \name{nbc4va}
 \alias{nbc4va}
 \alias{nbc4va-package}
-\title{Guide for the nbc4va package}
+\title{nbc4va: Bayes Classifier for Verbal Autopsy Data}
 \description{
-The nbc4va package implements the Naive Bayes Classifier (NBC) algorithm for verbal autopsy data based on code and methods
-provided by \href{http://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2}{Miasnikof \emph{et al} (2015)}. \cr \cr
-This package is intended to be used for experimenting with the NBC algorithm to predict causes of death using
-verbal autopsy data.
+An implementation of the Naive Bayes Classifier (NBC) algorithm
+used for Verbal Autopsy (VA) built on code from \href{http://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2}{Miasnikof et al (2015)} <DOI:10.1186/s12916-015-0521-2>.
+\cr\cr
+For documentation and help, please see:
+\cr\cr
+\url{https://rrwen.github.io/nbc4va}
 }
-\section{Quick Start}{
-
-Run the nbc4va Graphical User Interface (GUI) and follow the instructions in your browser:
-  \preformatted{
---------------------------------------------------------------------------------------------------
-
-    library(nbc4va)
-    nbc4vaGUI()
-
---------------------------------------------------------------------------------------------------
-  }
-\cr Exit the GUI by closing the browser window and pressing \code{Esc} in the R console to stop the GUI process.
-}
-
-\section{Guide}{
-
-\subsection{Background}{
-  Before using the nbc4va package, ensure that the training and testing data inputs are formatted correctly and that
-  the terms used in this package are understood:
-  \itemize{
-    \item It is strongly suggested to review the \link{nbc4vaHelpMethods} section for an understanding of terms and metrics
-    \item The input data has specifications detailed in the \link{nbc4vaHelpData} section
-  }
-}
-\subsection{Package Usage}{
-  The nbc4va package contains help sections with code samples and references for usage:
-  \itemize{
-    \item The \link{nbc4vaHelpBasic} section is suited for users of all levels
-    \item The \link{nbc4vaHelpAdvanced} section is suited for users of the package that have some R programming experience
-    \item The \link{nbc4vaHelpFunctions} section provides an organized list of package functions with brief descriptions
-  }
-}
-}
-
-\section{Getting Help}{
-
-\subsection{Using nbc4va Help Sections}{
-  The nbc4va package includes convenient functions to open help sections via the R console using \code{\link{nbc4vaHelp}}.
-  \preformatted{
---------------------------------------------------------------------------------------------------
-
-    library(nbc4va)  # load the nbc4va package
-    nbc4vaHelp()  # view help page by sections
-
---------------------------------------------------------------------------------------------------
-  }
-}
-\subsection{Using R's Help Function}{
-  In the R console, the command \code{\link{help}} (short form using \emph{?}) can be used to access help pages for R objects, functions, and packages. \cr \cr
-  \preformatted{
---------------------------------------------------------------------------------------------------
-
-    ?nbc4va  # view this guide, same as help(nbc4va)
-    ?nbc4vaGUI  # view help page for the user interface, same as help(nbc4vaGUI)
-    ?nbc  # view help page for the nbc function
-    ?plot.nbc # view help page for the plot.nbc method
-    ?nbc4vaData  # view help page for example data
-
---------------------------------------------------------------------------------------------------
-  }
-}
-}
-
 \section{Acknowledgements}{
 
 The original NBC algorithm code was developed by Peter Miaskinof and Vasily Giannakeas.
@@ -81,14 +20,24 @@ The original performance metrics code was provided by Dr. Mireille Gomes whom al
 Special thanks to Richard Zehang Li for providing a standard structure for the package and Patrycja Kolpak for user testing of the GUI.
 }
 
+\examples{
+\dontrun{
+library(nbc4va)
+
+# Quick start
+# Follow the instructions in the web interface
+nbc4vaGUI()
+
+# View user guides for the nbc4va package
+browseVignettes("nbc4va")
+}
+
+}
 \references{
 Use \code{citation("nbc4va")} to view citation information for the nbc4va package.
 \itemize{
   \item Miasnikof P, Giannakeas V, Gomes M, Aleksandrowicz L, Shestopaloff AY, Alam D, Tollman S, Samarikhalaj, Jha P. Naive Bayes classifiers for verbal autopsies: comparison to physician-based classification for 21,000 child and adult deaths. BMC Medicine. 2015;13:286. doi:10.1186/s12916-015-0521-2.
 }
-}
-\seealso{
-Developer Help Page: \code{\link{nbc4vaHelpDev}}
 }
 \author{
 Richard Wen <\email{rrwen.dev@gmail.com}>
