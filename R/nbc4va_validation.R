@@ -19,7 +19,7 @@
 #'   \item have unique ids
 #' }
 #'
-#' @param train Dataframe of verbal autopsy train data (See \code{\link{nbc4vaHelpData}}).
+#' @param train Dataframe of verbal autopsy train data (See \href{https://rrwen.github.io/nbc4va/data}{Data documentation}).
 #' \itemize{
 #'   \item Columns (in order): ID, Cause, Symptom-1 to Symptom-n..
 #'   \item ID (vectorof char): unique case identifiers

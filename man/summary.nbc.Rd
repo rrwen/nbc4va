@@ -83,7 +83,7 @@ Summarizes the results from a \code{\link{nbc}} object. The summary
 can be either for a particular case or for the entirety of cases.
 }
 \details{
-See \code{\link{nbc4vaHelpMethods}} for details on calculations and metrics.
+See \href{https://rrwen.github.io/nbc4va/methods}{Methods documentation} for details on calculations and metrics.
 }
 \examples{
 library(nbc4va)

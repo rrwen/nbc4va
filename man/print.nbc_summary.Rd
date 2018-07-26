@@ -17,7 +17,7 @@ the top causes by probability or predicted Cause Specific Mortality Fraction (CS
 \figure{printnbcex.png}
 }
 \details{
-See \code{\link{nbc4vaHelpMethods}} for details on CSMF and probability from the Naive Bayes Classifier.
+See \href{https://rrwen.github.io/nbc4va/methods}{Methods documentation} for details on CSMF and probability from the Naive Bayes Classifier.
 }
 \examples{
 library(nbc4va)

@@ -7,7 +7,8 @@ rrwen.dev@gmail.com
 
 * Added a `NEWS.md` file to track changes to the package.
 * Fixed if() conditions for lengths greater than 1
-* Moved help documentation to vignettes
+* Moved help documentation to vignettes and github pages
+* Added github repository
 
 ## v1.0
 

@@ -1,4 +1,5 @@
 ---
+title: "nbc4va"
 author: "Richard Wen <rrwen.dev@gmail.com>"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -8,8 +9,11 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-# Introduction to the nbc4va Package
+# Introduction
 
+Richard Wen  
+rrwen.dev@gmail.com  
+  
 The nbc4va package implements the Naive Bayes Classifier (NBC) algorithm for verbal autopsy data based on code and methods provided by [Miasnikof et al (2015)](http://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
 
 This package is intended to be used for experimenting with the NBC algorithm to predict causes of death using verbal autopsy data.
@@ -255,7 +259,7 @@ metrics[["Sensitivity"]]
 View(causeMetrics)
 ```
 
-### References for Evaluating a NBC Model}{
+### References for Evaluating a NBC Model
 
 See the [Methods](#methods) section for definitions of performance metrics and terms in the output.
 
@@ -266,7 +270,7 @@ library(nbc4va)
 ?summary.nbc
 ```
 
-## Plotting the Top Predicted Causes:
+## Plotting the Top Predicted Causes
 
 Run the following code using `plot.nbc()` in a R console to produce a bar plot of the top predicted causes:
 
@@ -300,6 +304,30 @@ For complete method specifications and usage of `plot.nbc()`, use the code below
 library(nbc4va)
 ?plot.nbc
 ```
+
+# Functions
+
+This section provides an organized list of the available functions in the nbc4va package and a brief description of what they are used for.
+
+## Utility Functions
+
+* **nbc4vaGUI**: web-based graphical user interface using [shiny](http://shiny.rstudio.com/)
+* **nbc4vaIO**: convenient file input and output of model results
+
+## Main Functions
+
+* **nbc**: fit a NBC model using training data to make predictions on testing data
+* **summary.nbc**: summarize `nbc()` model results with informative metrics
+* **plot.nbc**: plot the top predicted causes of death by cause specific mortality fractions from a `nbc()` model
+
+## Wrapper Functions
+
+* **topCOD.nbc**: get the top cause of death predictions from `nbc()`
+* **csmf.nbc**: get the predicted cause specific mortality fractions from `nbc()`
+
+## Extra User Functions
+
+* **ova2nbc**: wrapper function for accepting [openVA](https://cran.r-project.org/package=openVA) inputs to create a `nbc()` model
 
 # Data
 
@@ -381,7 +409,7 @@ View(nbc4vaDataRaw) # view the sample data with unknown symptom values
 
 This section provides details on the implementation of the Naive Bayes Classifier algorithm, definition of uncommon terms, and calculation of performance metrics.
 
-## Naive Bayes Classifier:
+## Naive Bayes Classifier
 
 The Naive Bayes Classifier (NBC) is a machine learning algorithm that uses training data containing cases of deaths to learn probabilities for known causes of death based on given symptoms. This produces a model that can use the learned probabilities to predict the cause of death for cases in unseen testing data with same symptoms.
 
@@ -474,3 +502,48 @@ where:
 * Miasnikof P, Giannakeas V, Gomes M, Aleksandrowicz L, Shestopaloff AY, Alam D, Tollman S, Samarikhalaj, Jha P. Naive Bayes classifiers for verbal autopsies: comparison to physician-based classification for 21,000 child and adult deaths. BMC Medicine. 2015;13:286. doi:10.1186/s12916-015-0521-2.
 * Murray CJL, Lozano R, Flaxman AD, Vahdatpour A, Lopez AD. Robust metrics for assessing the performance of different verbal autopsy cause assignment methods in validation studies.Popul Health Metr. 2011;9:28. doi:10.1186/1478-7954-9-28.
 * Powers DMW. EVALUATION: FROM PRECISION, RECALL AND F-MEASURE TO ROC, INFORMEDNESS, MARKEDNESS & CORRELATION. Journal of Machine Learning Technologies. 2011;2(1)37-63.
+
+# Developer Notes
+
+This section provides information for developers on the structure of the code, as well as any package and function dependencies.
+
+## Internal Functions
+
+* **internalNBC**: execute and return the details of the naive bayes classifier algorithm
+* **internalCheckNBC**: checks the `nbc()` function arguments
+* **internalCheckNBCSummary**: checks the `summary.nbc()` function arguments
+* **internalGetCSMFMaxError**: calculates the CSMF maximum error given the observed cases
+* **internalGetCSMFAcc**: calculates the CSMF accuracy given the predicted and observed cases of any length
+    * **Dependencies**: `internalGetCSMFMaxError()`
+* **internalGetCauseMetrics**: creates a dataframe of particular metrics for each cause
+* **internalGetMetrics**: creates a vector of overall metrics given the observed and predicted cases
+    * **Dependencies**:`internalGetCSMFMaxError()`, `internalGetCSMFAcc()`
+* **internalSubAsRest**: substitute a target value for the rest of the values by their distribution per column
+    * **Dependencies**: `internalRoundFixedSum()`
+* **internalRoundFixedSum**: round a vector of values to whole numbers while preserving their sum
+
+## External Functions
+
+* **nbc**: main function for running the naive bayes classifier
+    * **Dependencies**: `internalCheckNBC()`, `internalNBC()`
+* **summary.nbc**: consumes output from `nbc()` to calculate informative metrics
+     \itemize{
+    * **Dependencies**: `internalCheckNBCSummary()`, `internalGetCauseMetrics()`, `internalGetMetrics()`, `internalGetCSMFMaxError()`, `internalGetCSMFAcc()`
+* **print.nbc_summary**: consumes output from `summary.nbc()` to print a message of the top causes
+    * **Dependencies**: `summary.nbc()`, `nbc()`
+* **plot.nbc**: consumes output from `nbc()` to plot the top causes
+    * **Dependencies**: `summary.nbc()`, `nbc()`
+* **nbc4vaIO**: file input and output for the main package functions
+    * **Dependencies**: `summary.nbc()`, `nbc()`
+* **nbc4vaGUI**: graphical user interface to run the main package functions
+    * **Dependencies**: `nbc4vaIO()`
+    * **Required Packages**: [shiny](https://cran.r-project.org/package=shiny)
+* **csmf.nbc**: consumes output from `nbc()` to get the predicted csmfs
+    * **Dependencies**: `nbc()`, `summary.nbc()`
+* **topCOD.nbc**: consumes output from `nbc()` to get the top predictions
+    * **Dependencies**: `nbc()`
+
+## Extra Functions
+
+* **ova2nbc**: consumes arguments specified in the [openVA](https://cran.r-project.org/package=openVA) package to get a modified `nbc` object
+    * **Suggested Packages**: [openVA](https://cran.r-project.org/package=openVA)

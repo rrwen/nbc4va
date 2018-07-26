@@ -2,7 +2,7 @@
 # rrwen.dev@gmail.com
 # nbc4va guide documentation.
 .onAttach <- function(libname, pkgname) {
-  packageStartupMessage("To view the 'nbc4va' package description see: \nhelp(nbc4va) \n\n To view the 'nbc4va' package documentation, see: \nhttps://rrwen.github.io/nbc4va \n\nTo cite the original method used in the 'nbc4va' package see: \ncitation(\"nbc4va\")")
+  packageStartupMessage("To view the 'nbc4va' package description see: \nhelp(nbc4va) \n\nTo view the 'nbc4va' package documentation, see: \nhttps://rrwen.github.io/nbc4va \n\nTo cite the original method used in the 'nbc4va' package see: \ncitation(\"nbc4va\")")
 }
 
 #' nbc4va: Bayes Classifier for Verbal Autopsy Data

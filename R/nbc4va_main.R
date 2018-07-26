@@ -109,7 +109,7 @@ nbc <- function(train, test, known=TRUE) {
 #' Summarizes the results from a \code{\link{nbc}} object. The summary
 #' can be either for a particular case or for the entirety of cases.
 #'
-#' @details See \code{\link{nbc4vaHelpMethods}} for details on calculations and metrics.
+#' @details See \href{https://rrwen.github.io/nbc4va/methods}{Methods documentation} for details on calculations and metrics.
 #'
 #' @inheritParams internalGetMetrics
 #' @inheritParams internalCheckNBCSummary
@@ -257,7 +257,7 @@ summary.nbc <- function(object, top=5, id=NULL, csmfa.obs=NULL, ...) {
 #' the top causes by probability or predicted Cause Specific Mortality Fraction (CSMF). \cr \cr
 #' \figure{printnbcex.png}
 #'
-#' @details See \code{\link{nbc4vaHelpMethods}} for details on CSMF and probability from the Naive Bayes Classifier.
+#' @details See \href{https://rrwen.github.io/nbc4va/methods}{Methods documentation} for details on CSMF and probability from the Naive Bayes Classifier.
 #'
 #' @param x A \code{\link{summary.nbc}} object.
 #' @param ... Additional arguments to be passed if applicable.
@@ -295,7 +295,7 @@ print.nbc_summary <- function(x, ...) {
 #' predicted Cause Specific Mortality Fraction (CSMF). \cr \cr
 #' \figure{plotnbcex.png}
 #'
-#' @details See \code{\link{nbc4vaHelpMethods}} for details on CSMF and CSMF accuracy.
+#' @details See \href{https://rrwen.github.io/nbc4va/methods}{Methods documentation} for details on CSMF and CSMF accuracy.
 #'
 #' @inheritParams internalGetMetrics
 #' @param x A \code{\link{nbc}} object.
