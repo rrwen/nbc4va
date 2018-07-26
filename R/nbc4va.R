@@ -1,4 +1,5 @@
-# Richard Wen (rich.rwen@gmail.com)
+# Richard Wen
+# rrwen.dev@gmail.com
 # nbc4va guide documentation.
 .onAttach <- function(libname, pkgname) {
   packageStartupMessage("To view the 'nbc4va' package guide see: help(nbc4va) \nTo cite the original method used in the 'nbc4va' package see: citation(\"nbc4va\")")
@@ -81,7 +82,7 @@
 #' }
 #'
 #' @seealso Developer Help Page: \code{\link{nbc4vaHelpDev}}
-#' @author Richard Wen <\email{rich.rwen@@gmail.com}>
+#' @author Richard Wen <\email{rrwen.dev@@gmail.com}>
 #' @docType package
 #' @name nbc4va
 NULL
