@@ -13,7 +13,7 @@ This package is intended to be used for experimenting with the NBC algorithm to 
 
 ## Acknowledgements
 
-The original NBC algorithm code was developed by Peter Miaskinof and Vasily Giannakeas. The original performance metrics code was provided by Dr. Mireille Gomes whom also offered guidance in metrics implementation and user testing. Special thanks to Richard Zehang Li for providing a standard structure for the package and Patrycja Kolpak for user testing of the GUI.
+This package was developed at the Centre for Global Health Research (CGHR) in Toronto, Ontario, Canada. The original NBC algorithm code was developed by Peter Miaskinof and Vasily Giannakeas. The original performance metrics code was provided by Dr. Mireille Gomes whom also offered guidance in metrics implementation and user testing. Special thanks to Richard Zehang Li for providing a standard structure for the package and Patrycja Kolpak for user testing of the GUI.
 
 ## Quick Start
 
@@ -476,7 +476,7 @@ where:
 * $j$ is a true/observed cause
 * $CSMFtruej$ is the true/observed CSMF for cause $j$
 
-**CSMFaccuracy**: cause specific mortality fraction accuracy \href{http://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28}{(Murray \emph{et al} 2011)}.
+**CSMFaccuracy**: cause specific mortality fraction accuracy [(Murray et al 2011)](http://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28).
 
 $$
 CSMFAccuracy = 1-\frac{\sum_{j=1}^{k} |CSMF_{j}^{true} - CSMF_{j}^{pred}|}{CSMF Maximum Error}
@@ -520,7 +520,6 @@ This section provides information for developers on the structure of the code, a
 * **nbc**: main function for running the naive bayes classifier
     * **Dependencies**: `internalCheckNBC()`, `internalNBC()`
 * **summary.nbc**: consumes output from `nbc()` to calculate informative metrics
-     \itemize{
     * **Dependencies**: `internalCheckNBCSummary()`, `internalGetCauseMetrics()`, `internalGetMetrics()`, `internalGetCSMFMaxError()`, `internalGetCSMFAcc()`
 * **print.nbc_summary**: consumes output from `summary.nbc()` to print a message of the top causes
     * **Dependencies**: `summary.nbc()`, `nbc()`
