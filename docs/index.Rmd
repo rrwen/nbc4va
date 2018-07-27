@@ -7,7 +7,7 @@ output: bookdown::gitbook
 
 # Introduction
   
-The nbc4va package implements the Naive Bayes Classifier (NBC) algorithm for verbal autopsy data based on code and methods provided by [Miasnikof et al (2015)](http://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
+The nbc4va package implements the Naive Bayes Classifier (NBC) algorithm for verbal autopsy data based on code and methods provided by [Miasnikof et al (2015)](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
 
 This package is intended to be used for experimenting with the NBC algorithm to predict causes of death using verbal autopsy data.
 
@@ -406,7 +406,7 @@ This section provides details on the implementation of the Naive Bayes Classifie
 
 The Naive Bayes Classifier (NBC) is a machine learning algorithm that uses training data containing cases of deaths to learn probabilities for known causes of death based on given symptoms. This produces a model that can use the learned probabilities to predict the cause of death for cases in unseen testing data with same symptoms.
 
-The nbc4va package implements the NBC algorithm for verbal autopsy data using code and methods built on [Miasnikof et al (2015)](http://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
+The nbc4va package implements the NBC algorithm for verbal autopsy data using code and methods built on [Miasnikof et al (2015)](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
 
 ## Terms for Data
 
@@ -448,7 +448,7 @@ where:
 * $FN$ is the number of false negatives
 * This metric measures a model's ability to correctly predict causes of death
 
-**PCCC**: partial chance corrected concordance [(Murray et al 2011)](http://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28).
+**PCCC**: partial chance corrected concordance [(Murray et al 2011)](https://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28).
 
 $$
 PCCC(k) = \frac{C-\frac{k}{N}}{1-\frac{k}{N}}
@@ -465,7 +465,7 @@ where:
 
 The following metrics measure the performance of a model by comparing its distribution of cause predictions to a distribution of true/observed causes for similar cases.
 
-**CSMFmaxError**: cause specific mortality fraction maximum error [(Murray et al 2011)](http://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28).
+**CSMFmaxError**: cause specific mortality fraction maximum error [(Murray et al 2011)](https://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28).
 
 $$
 CSMF Maximum Error = 2(1-Min(CSMF_{j}^{true})
@@ -476,7 +476,7 @@ where:
 * $j$ is a true/observed cause
 * $CSMFtruej$ is the true/observed CSMF for cause $j$
 
-**CSMFaccuracy**: cause specific mortality fraction accuracy [(Murray et al 2011)](http://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28).
+**CSMFaccuracy**: cause specific mortality fraction accuracy [(Murray et al 2011)](https://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28).
 
 $$
 CSMFAccuracy = 1-\frac{\sum_{j=1}^{k} |CSMF_{j}^{true} - CSMF_{j}^{pred}|}{CSMF Maximum Error}

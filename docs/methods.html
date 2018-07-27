@@ -25,7 +25,7 @@
 <meta name="author" content="Richard Wen rrwen.dev@gmail.com">
 
 
-<meta name="date" content="2018-07-26">
+<meta name="date" content="2018-07-27">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -181,7 +181,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="naive-bayes-classifier" class="section level2">
 <h2><span class="header-section-number">6.1</span> Naive Bayes Classifier</h2>
 <p>The Naive Bayes Classifier (NBC) is a machine learning algorithm that uses training data containing cases of deaths to learn probabilities for known causes of death based on given symptoms. This produces a model that can use the learned probabilities to predict the cause of death for cases in unseen testing data with same symptoms.</p>
-<p>The nbc4va package implements the NBC algorithm for verbal autopsy data using code and methods built on <a href="http://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2">Miasnikof et al (2015)</a>.</p>
+<p>The nbc4va package implements the NBC algorithm for verbal autopsy data using code and methods built on <a href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2">Miasnikof et al (2015)</a>.</p>
 </div>
 <div id="terms-for-data" class="section level2">
 <h2><span class="header-section-number">6.2</span> Terms for Data</h2>
@@ -212,7 +212,7 @@ Sensitivity = \frac{TP}{TP+FN}
 <li><span class="math inline">\(FN\)</span> is the number of false negatives</li>
 <li>This metric measures a model’s ability to correctly predict causes of death</li>
 </ul>
-<p><strong>PCCC</strong>: partial chance corrected concordance <a href="http://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28">(Murray et al 2011)</a>.</p>
+<p><strong>PCCC</strong>: partial chance corrected concordance <a href="https://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28">(Murray et al 2011)</a>.</p>
 <p><span class="math display">\[
 PCCC(k) = \frac{C-\frac{k}{N}}{1-\frac{k}{N}}
 \]</span></p>
@@ -227,7 +227,7 @@ PCCC(k) = \frac{C-\frac{k}{N}}{1-\frac{k}{N}}
 <div id="calculation-of-metrics-at-the-population-level" class="section level2">
 <h2><span class="header-section-number">6.5</span> Calculation of Metrics at the Population Level</h2>
 <p>The following metrics measure the performance of a model by comparing its distribution of cause predictions to a distribution of true/observed causes for similar cases.</p>
-<p><strong>CSMFmaxError</strong>: cause specific mortality fraction maximum error <a href="http://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28">(Murray et al 2011)</a>.</p>
+<p><strong>CSMFmaxError</strong>: cause specific mortality fraction maximum error <a href="https://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28">(Murray et al 2011)</a>.</p>
 <p><span class="math display">\[
 CSMF Maximum Error = 2(1-Min(CSMF_{j}^{true})
 \]</span></p>
@@ -236,7 +236,7 @@ CSMF Maximum Error = 2(1-Min(CSMF_{j}^{true})
 <li><span class="math inline">\(j\)</span> is a true/observed cause</li>
 <li><span class="math inline">\(CSMFtruej\)</span> is the true/observed CSMF for cause <span class="math inline">\(j\)</span></li>
 </ul>
-<p><strong>CSMFaccuracy</strong>: cause specific mortality fraction accuracy <a href="http://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28">(Murray et al 2011)</a>.</p>
+<p><strong>CSMFaccuracy</strong>: cause specific mortality fraction accuracy <a href="https://pophealthmetrics.biomedcentral.com/articles/10.1186/1478-7954-9-28">(Murray et al 2011)</a>.</p>
 <p><span class="math display">\[
 CSMFAccuracy = 1-\frac{\sum_{j=1}^{k} |CSMF_{j}^{true} - CSMF_{j}^{pred}|}{CSMF Maximum Error}
 \]</span></p>
