@@ -5,8 +5,8 @@ Version: 1.1
 Date: 2018-08-02
 Authors@R: c(
 	person(given = "Richard", family = "Wen", email = "rrwen.dev@gmail.com", role = c("aut", "cre")),
-	person(given = "Pierre", family = "Miasnikof", role = "aut"),
-	person(given = "Vasily", family = "Giannakeas", role = "aut"),
+	person(given = "Pierre", family = "Miasnikof", role = "ctb"),
+	person(given = "Vasily", family = "Giannakeas", role = "ctb"),
 	person(given = "Mireille", family = "Gomes", role = "ctb"))
 Maintainer: Richard Wen <rrwen.dev@gmail.com>
 Description: An implementation of the Naive Bayes Classifier (NBC) algorithm
