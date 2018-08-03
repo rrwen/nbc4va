@@ -2,7 +2,7 @@ Package: nbc4va
 Type: Package
 Title: Bayes Classifier for Verbal Autopsy Data
 Version: 1.1
-Date: 2018-08-02
+Date: 2018-08-03
 Authors@R: c(
 	person(given = "Richard", family = "Wen", email = "rrwen.dev@gmail.com", role = c("aut", "cre")),
 	person(given = "Pierre", family = "Miasnikof", role = "ctb"),
