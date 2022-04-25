@@ -29,6 +29,8 @@ whole <- nbc4va:::internalRoundFixedSum(dec)
 }
 }
 \seealso{
-Other data functions: \code{\link{internalSubAsRest}}
+Other data functions: 
+\code{\link{internalSubAsRest}()}
 }
+\concept{data functions}
 \keyword{internal}

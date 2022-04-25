@@ -349,7 +349,7 @@ plot.nbc <- function(x,
   # (Data_Plot) Obtain the plot data depending on if test cases are known
   predCSMF <- table(factor(x$pred.causes, levels=x$causes)) / length(x$pred.causes)
   metrics <- data.frame(Cause=names(predCSMF), CSMFpredicted=as.numeric(predCSMF))
-  plotData <- data.frame(x=metrics$CSMFpredicted, y=metrics$Cause, stringsAsFactors=FALSE)
+  plotData <- data.frame(x=metrics$CSMFpredicted, y=metrics$Cause)
 
   # (Data_Filter) Filter by top.plot and min.csmf
   plotData <- plotData[plotData$x > min.csmf, ]  # filter to min.csmf

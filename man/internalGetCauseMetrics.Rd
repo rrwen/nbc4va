@@ -49,9 +49,11 @@ cmetrics <- nbc4va:::internalGetCauseMetrics(pred, obs)
 
 }
 \seealso{
-Other internal functions: \code{\link{internalGetCSMFAcc}},
-  \code{\link{internalGetCSMFMaxError}},
-  \code{\link{internalGetMetrics}},
-  \code{\link{internalNBC}}
+Other internal functions: 
+\code{\link{internalGetCSMFAcc}()},
+\code{\link{internalGetCSMFMaxError}()},
+\code{\link{internalGetMetrics}()},
+\code{\link{internalNBC}()}
 }
+\concept{internal functions}
 \keyword{internal}

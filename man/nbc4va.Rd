@@ -3,7 +3,6 @@
 \docType{package}
 \name{nbc4va}
 \alias{nbc4va}
-\alias{nbc4va-package}
 \title{nbc4va: Bayes Classifier for Verbal Autopsy Data}
 \description{
 An implementation of the Naive Bayes Classifier (NBC) algorithm

@@ -24,5 +24,7 @@ nbc4vaGUI()
 
 }
 \seealso{
-Other utility functions: \code{\link{nbc4vaIO}}
+Other utility functions: 
+\code{\link{nbc4vaIO}()}
 }
+\concept{utility functions}

@@ -1,9 +1,8 @@
-# nbc4va Changes
+# nbc4va 1.2
 
-Richard Wen  
-rrwen.dev@gmail.com
+* Remove `stringsAsFactors = FALSE` as it is now the default for R v4.0.0+
 
-## v1.1
+# nbc4va 1.1
 
 * Added a `NEWS.md` file to track changes to the package
 * Fixed if() conditions for lengths greater than 1
@@ -11,6 +10,6 @@ rrwen.dev@gmail.com
 * Added github repository
 * Added authors and contributors to `DESCRIPTION` file
 
-## v1.0
+# nbc4va 1.0
 
 * Initial release

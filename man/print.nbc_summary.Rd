@@ -34,6 +34,9 @@ print(brief)
 
 }
 \seealso{
-Other main functions: \code{\link{nbc}},
-  \code{\link{plot.nbc}}, \code{\link{summary.nbc}}
+Other main functions: 
+\code{\link{nbc}()},
+\code{\link{plot.nbc}()},
+\code{\link{summary.nbc}()}
 }
+\concept{main functions}

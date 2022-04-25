@@ -186,9 +186,9 @@ internalNBC <- function(train, test, known=TRUE){
   testIDs <- as.character(testIDs)
   trainCauses <- as.character(trainCauses)
   testCauses <- as.character(testCauses)
-  pred <- data.frame(CaseID=testIDs, TrueCause=testCauses, pred, row.names=NULL, stringsAsFactors = FALSE)
+  pred <- data.frame(CaseID=testIDs, TrueCause=testCauses, pred, row.names=NULL)
   pred[, 2:ncol(pred)] <- sapply(pred[, 2:ncol(pred)], as.character)
-  prob <- data.frame(CaseID=testIDs, prob, row.names=NULL, stringsAsFactors = FALSE)
+  prob <- data.frame(CaseID=testIDs, prob, row.names=NULL)
   prob[, 2:ncol(prob)] <- sapply(prob[, 2:ncol(prob)], as.numeric)
 
   # (Format_Causes) Include case ids in cause vectors
@@ -321,7 +321,7 @@ internalGetCauseMetrics <- function(pred, obs, causes=unique(c(pred, obs))) {
   # (Calculate_Metrics) Calculate performance metrics per cause ----
 
   # (Frequencies) Include frequencies in table
-  out <- data.frame(Cause=row.names(mx), mx, stringsAsFactors=FALSE)
+  out <- data.frame(Cause=row.names(mx), mx)
   row.names(out) <- NULL
   out$PredictedFrequency <- as.numeric(table(factor(pred, levels=causes)))
   out$ObservedFrequency <- as.numeric(table(factor(obs, levels=causes)))

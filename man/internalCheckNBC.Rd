@@ -76,6 +76,8 @@ test <- checked$test
 
 }
 \seealso{
-Other validation functions: \code{\link{internalCheckNBCSummary}}
+Other validation functions: 
+\code{\link{internalCheckNBCSummary}()}
 }
+\concept{validation functions}
 \keyword{internal}

@@ -22,9 +22,11 @@ maxerror <- nbc4va:::internalGetCSMFMaxError(obs)
 
 }
 \seealso{
-Other internal functions: \code{\link{internalGetCSMFAcc}},
-  \code{\link{internalGetCauseMetrics}},
-  \code{\link{internalGetMetrics}},
-  \code{\link{internalNBC}}
+Other internal functions: 
+\code{\link{internalGetCSMFAcc}()},
+\code{\link{internalGetCauseMetrics}()},
+\code{\link{internalGetMetrics}()},
+\code{\link{internalNBC}()}
 }
+\concept{internal functions}
 \keyword{internal}

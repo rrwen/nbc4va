@@ -1,10 +1,9 @@
-# nbc4va
-
-Richard Wen  
-rrwen.dev@gmail.com
+# nbc4va: Bayes Classifier for Verbal Autopsy Data
 
 * [Documentation](https://rrwen.github.io/nbc4va)
-  
+* [NEWS](NEWS.md)
+* [Acknowledgements](ACKNOWLEDGEMENTS.md)
+
 An implementation of the Naive Bayes Classifier (NBC) algorithm used for Verbal Autopsy (VA) built on code from [Miasnikof et al (2015)](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
 
 ## Acknowledgements
@@ -31,3 +30,9 @@ install.packages("nbc4va")
 library(nbc4va)
 nbc4vaGUI()
 ```
+
+For programmatic usage, see [Advanced Usage](https://rrwen.github.io/nbc4va/advanced-usage.html).
+
+## Contact
+
+Richard Wen <rrwen.dev@gmail.com>

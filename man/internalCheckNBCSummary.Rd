@@ -61,6 +61,8 @@ csmfa.obs <- checked$csmfa.obs
 
 }
 \seealso{
-Other validation functions: \code{\link{internalCheckNBC}}
+Other validation functions: 
+\code{\link{internalCheckNBC}()}
 }
+\concept{validation functions}
 \keyword{internal}

@@ -135,12 +135,14 @@ pred <- results$pred.causes
 }
 }
 \seealso{
-Other internal functions: \code{\link{internalGetCSMFAcc}},
-  \code{\link{internalGetCSMFMaxError}},
-  \code{\link{internalGetCauseMetrics}},
-  \code{\link{internalGetMetrics}}
+Other internal functions: 
+\code{\link{internalGetCSMFAcc}()},
+\code{\link{internalGetCSMFMaxError}()},
+\code{\link{internalGetCauseMetrics}()},
+\code{\link{internalGetMetrics}()}
 }
 \author{
 Pierre Miasnikof (Original), Vasily Giannakeas (Original), Richard Wen (Edits) <\email{wenr@smh.ca}>
 }
+\concept{internal functions}
 \keyword{internal}
