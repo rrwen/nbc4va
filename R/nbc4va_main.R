@@ -216,7 +216,7 @@ summary.nbc <- function(object, top=5, id=NULL, csmfa.obs=NULL, ...) {
     out$obs.causes <- object$obs.causes[id]
     out$prob.causes <- object$prob.causes[id]
     out$prob <- object$prob[object$prob[, 1] == id, ]
-    out$top.prob <- unlist(sort(out$prob[, 2:ncol(out$prob)], decreasing=TRUE)[1:top])
+    out$top.prob <- sort(unlist(out$prob[, 2:ncol(out$prob)]), decreasing=TRUE)[1:top]
     out$pred.causes <- object$pred.causes[id]
     out$pred <- object$pred[object$pred == id, ]
     out$obs <- object$obs[object$obs == id, ]

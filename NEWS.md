@@ -1,8 +1,10 @@
 # nbc4va 1.2
 
 * Remove `stringsAsFactors = FALSE` as it is now the default for R v4.0.0+
-* Set R version to 4.2.0 or higher
-* Fixed broken links in documentation
+* Set R version to 4.0.0 or higher
+* Fixed broken urls in documentation
+* Replace http urls with https urls
+* Fix error/warning "In xtfrm.data.frame(x) : cannot xtfrm data frames"
 
 # nbc4va 1.1
 
