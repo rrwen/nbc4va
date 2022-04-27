@@ -15,7 +15,7 @@ internalRoundFixedSum(v, roundSum = round)
 out A vector of \emph{v} with the values rounded to whole numbers but with the whole number sum preserved.
 }
 \description{
-Rounds a vector of values to whole numbers while preserving the sum (rounded if it is not a whole number) using the largest remainder method \href{https://www.tcd.ie/Political_Science/staff/michael_gallagher/ElectoralStudies1991.pdf}{(Gallagher, 1991)}.
+Rounds a vector of values to whole numbers while preserving the sum (rounded if it is not a whole number) using the largest remainder method \href{https://www.tcd.ie/Political_Science/people/michael_gallagher/ElectoralStudies1991.pdf}{(Gallagher, 1991)}.
 }
 \examples{
 library(nbc4va)

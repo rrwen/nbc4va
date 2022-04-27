@@ -431,7 +431,7 @@ The nbc4va package implements the NBC algorithm for verbal autopsy data using co
 
 **True Positives**: The number of cases, given a cause, where the predicted cause is equal to the actual observed cause [(Fawcett, 2005)](http://people.inf.elte.hu/kiss/13dwhdm/roc.pdf).
 
-**True Negatives**: The number of cases, given a cause, where the predicted is not the cause and the actual observed is also not the cause [(Fawcett, 2005)](http://people.inf.elte.hu/kiss/13dwhdm/roc.pdf).
+**True Negatives**: The number of cases, given a cause, where the predicted is not the cause and the actual observed is also not the cause [(Fawcett, 2005)](https://people.inf.elte.hu/kiss/13dwhdm/roc.pdf).
 
 **False Positives**: The number of cases, given a cause, where the predicted is the cause and the actual observed is not the cause [(Fawcett, 2005)](http://people.inf.elte.hu/kiss/13dwhdm/roc.pdf).
 

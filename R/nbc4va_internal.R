@@ -8,7 +8,7 @@
 #' Performs Naive Bayes Classification given train and test (validation) datasets, as well as
 #' additional information for the train and test data.
 #'
-#' @details This function was built on code provided by \href{http://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2}{Miasnikof \emph{et al} (2015)}.
+#' @details This function was built on code provided by \href{https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2}{Miasnikof \emph{et al} (2015)}.
 #' Edits to the code included the following improvements:
 #' \itemize{
 #'   \item Causes can be character type

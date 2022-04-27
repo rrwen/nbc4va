@@ -1,6 +1,8 @@
 # nbc4va 1.2
 
 * Remove `stringsAsFactors = FALSE` as it is now the default for R v4.0.0+
+* Set R version to 4.2.0 or higher
+* Fixed broken links in documentation
 
 # nbc4va 1.1
 

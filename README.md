@@ -1,8 +1,7 @@
 # nbc4va: Bayes Classifier for Verbal Autopsy Data
 
 * [Documentation](https://rrwen.github.io/nbc4va)
-* [NEWS](NEWS.md)
-* [Acknowledgements](ACKNOWLEDGEMENTS.md)
+* [Changes](NEWS.md)
 
 An implementation of the Naive Bayes Classifier (NBC) algorithm used for Verbal Autopsy (VA) built on code from [Miasnikof et al (2015)](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
 

@@ -192,7 +192,7 @@ nbc4vaIO <- function(trainFile,
 
 #' Web-based graphical user interface in nbc4va
 #'
-#' A Graphical User Interface (GUI) for the nbc4va package using \href{http://shiny.rstudio.com/}{shiny}. \cr \cr
+#' A Graphical User Interface (GUI) for the nbc4va package using \href{https://shiny.rstudio.com/}{shiny}. \cr \cr
 #' \figure{nbcguiex.png}
 #'
 #' @details This function requires the shiny package, which can be installed via: \cr \cr

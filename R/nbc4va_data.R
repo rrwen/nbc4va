@@ -164,7 +164,7 @@ internalSubAsRest <- function(dataset, x, cols=1:ncol(dataset), ignore=c(NA, NaN
 
 #' Round values to whole numbers while preserving the sum
 #'
-#' Rounds a vector of values to whole numbers while preserving the sum (rounded if it is not a whole number) using the largest remainder method \href{https://www.tcd.ie/Political_Science/staff/michael_gallagher/ElectoralStudies1991.pdf}{(Gallagher, 1991)}.
+#' Rounds a vector of values to whole numbers while preserving the sum (rounded if it is not a whole number) using the largest remainder method \href{https://www.tcd.ie/Political_Science/people/michael_gallagher/ElectoralStudies1991.pdf}{(Gallagher, 1991)}.
 #'
 #' @param v A vector of values with decimal values and a whole number sum to round.
 #' @param roundSum If the sum of the values in \emph{v} is not a whole number, choose a rounding method to ensure it is a whole number.
