@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Basic Usage | nbc4va</title>
-  <meta name="description" content="2 Basic Usage | nbc4va" />
+  <title>Page not found | nbc4va</title>
+  <meta name="description" content="Page not found | nbc4va" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Basic Usage | nbc4va" />
+  <meta property="og:title" content="Page not found | nbc4va" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Basic Usage | nbc4va" />
+  <meta name="twitter:title" content="Page not found | nbc4va" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction.html"/>
-<link rel="next" href="advanced-usage.html"/>
+
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -220,80 +220,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="basic-usage" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">2</span> Basic Usage<a href="basic-usage.html#basic-usage" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This section provides details on the basic usage of the nbc4va package which includes bringing up
-the Graphic User Interface and running the Naive Bayes Classifier algorithm using file input and output.</p>
-<div id="user-interface" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> User Interface<a href="basic-usage.html#user-interface" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The simplest way to use the package is to open the Graphical User Interface (GUI) in your default web browser with <code>nbc4vaGUI()</code>.</p>
-<p>Once the GUI is loaded, follow the instructions to fit a NBC model to your <code>training.csv</code> and to evaluate its performance with your <code>testing.csv</code> data.</p>
-<div id="example-of-gui" class="section level3 hasAnchor" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Example of GUI<a href="basic-usage.html#example-of-gui" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If <code>nbc4vaGUI()</code> is called sucessfully, the GUI shown in the image below should be available in your web browser.</p>
-<p><img src="nbcguiex.png" /></p>
-</div>
-<div id="sample-code-for-gui" class="section level3 hasAnchor" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Sample Code for GUI<a href="basic-usage.html#sample-code-for-gui" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Run the following code using <code>nbc4vaGUI()</code> in a R console to open the GUI in your web browser:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="basic-usage.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nbc4va)  <span class="co"># load the package</span></span>
-<span id="cb4-2"><a href="basic-usage.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nbc4vaGUI</span>()  <span class="co"># open the GUI in your web browser</span></span></code></pre></div>
-<p>Close the GUI by pressing escape while you are in the R console.</p>
-</div>
-<div id="references-for-gui" class="section level3 hasAnchor" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> References for GUI<a href="basic-usage.html#references-for-gui" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>See the <a href="methods.html#methods">Methods</a> section for definitions of performance metrics and terms in the model results.</p>
-</div>
-</div>
-<div id="file-input-and-output" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> File Input and Output<a href="basic-usage.html#file-input-and-output" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The <code>nbc4vaIO()</code> function can be called to fit a NBC model and save its results using the paths to your <code>training</code> and <code>testing</code> files in Comma Separated Values (CSV) format.</p>
-<p>The saved results will in a selected directory with four CSV files detailing the performance of the model:</p>
-<ul>
-<li><code>.._pred.csv</code>: a table of predictions, where the columns Prediction1..PredictionN are the cause of death predictions with Prediction1 being the most probable cause</li>
-<li><code>.._prob.csv</code>: a table of probabilities, where each column is a cause of death and each cell is the probability of a case being that cause</li>
-<li><code>.._causes.csv</code>: a table of metrics for each cause</li>
-<li><code>.._metrics.csv</code>: a table of summary metrics for the model</li>
-<li>The <em>..</em> represents the name of your <code>testing</code> file</li>
-</ul>
-<div id="example-of-file-input-and-output" class="section level3 hasAnchor" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Example of File Input and Output<a href="basic-usage.html#example-of-file-input-and-output" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The image below shows the input files on the left and the saved results on the right using the <code>nbc4vaIO()</code> function (with the <code>fileHeader</code> argument set to <code>"nbc4va"</code>).</p>
-<p><img src="nbcioex.png" width="80%"></p>
-</div>
-<div id="sample-code-for-file-input-and-output" class="section level3 hasAnchor" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> Sample Code for File Input and Output<a href="basic-usage.html#sample-code-for-file-input-and-output" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Run the following code using <code>nbc4vaIO()</code> in a R console to produce NBC model performance results with the <code>training</code> and <code>testing</code> files.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="basic-usage.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nbc4va)</span>
-<span id="cb5-2"><a href="basic-usage.html#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="basic-usage.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Find paths to your &quot;trainFile&quot; and &quot;testFile&quot;</span></span>
-<span id="cb5-4"><a href="basic-usage.html#cb5-4" aria-hidden="true" tabindex="-1"></a>trainFile <span class="ot">&lt;-</span> <span class="fu">file.choose</span>()  <span class="co"># select train file first</span></span>
-<span id="cb5-5"><a href="basic-usage.html#cb5-5" aria-hidden="true" tabindex="-1"></a>testFile <span class="ot">&lt;-</span> <span class="fu">file.choose</span>()  <span class="co"># followed by test file after</span></span>
-<span id="cb5-6"><a href="basic-usage.html#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="basic-usage.html#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Run NBC model</span></span>
-<span id="cb5-8"><a href="basic-usage.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Dump results to same directory as &quot;testFile&quot;</span></span>
-<span id="cb5-9"><a href="basic-usage.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Set &quot;known&quot;&quot; to indicate whether testing causes are known</span></span>
-<span id="cb5-10"><a href="basic-usage.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">nbc4vaIO</span>(trainFile, testFile, <span class="at">known=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-</div>
-<div id="references-for-file-input-and-output" class="section level3 hasAnchor" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> References for File Input and Output<a href="basic-usage.html#references-for-file-input-and-output" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>See the <a href="data.html#data">Data</a> section for <code>training</code> and <code>testing</code> file formats</li>
-<li>See the <a href="methods.html#methods">Methods</a> section for definitions of performance metrics and terms in the model results</li>
-</ul>
-<p>For complete function specifications and usage of <code>nbc4vaIO()</code>, run the code below in an R console:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="basic-usage.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nbc4va)</span>
-<span id="cb6-2"><a href="basic-usage.html#cb6-2" aria-hidden="true" tabindex="-1"></a>?nbc4vaIO</span></code></pre></div>
-</div>
-</div>
+<div id="page-not-found" class="section level1">
+<h1>Page not found</h1>
+<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
+<p>You may want to try searching to find the page's new location, or use
+the table of contents to find the page you are looking for.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="advanced-usage.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
