@@ -67,6 +67,7 @@
 #' @importFrom methods is
 #' @family validation functions
 #' @keywords internal
+#' @export
 internalCheckNBC <- function(train, test, known=TRUE, assume=FALSE, unknown=99) {
 
   # (Dataframe_Check) Check if dataframes are correctly formatted ----
@@ -274,6 +275,7 @@ internalCheckNBC <- function(train, test, known=TRUE, assume=FALSE, unknown=99) 
 #' @importFrom methods is
 #' @family validation functions
 #' @keywords internal
+#' @export
 internalCheckNBCSummary <- function(object, top=5, id=NULL, csmfa.obs=NULL, ...) {
   if (!is(object, "nbc")) {
     stop("The object must be of type \"nbc\".")

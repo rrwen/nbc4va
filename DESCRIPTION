@@ -17,12 +17,12 @@ Depends:
 Imports:
     graphics,
     methods,
-    utils
+    utils,
+    shiny
 Suggests:
     bookdown,
     knitr,
     rmarkdown,
-    shiny,
     testthat
 Enhances: openVA
 License: GPL-3

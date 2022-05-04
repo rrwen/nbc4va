@@ -111,6 +111,7 @@
 #' @include nbc4va_validation.R
 #' @family internal functions
 #' @keywords internal
+#' @export
 internalNBC <- function(train, test, known=TRUE){
 
   # (Prepare) Prepare variables required for NBC ----
@@ -283,6 +284,7 @@ internalNBC <- function(train, test, known=TRUE){
 #'
 #' @family internal functions
 #' @keywords internal
+#' @export
 internalGetCauseMetrics <- function(pred, obs, causes=unique(c(pred, obs))) {
 
   # (Unmatched_Error) Observed and predicted do not match up
@@ -366,6 +368,7 @@ internalGetCauseMetrics <- function(pred, obs, causes=unique(c(pred, obs))) {
 #'
 #' @family internal functions
 #' @keywords internal
+#' @export
 internalGetCSMFMaxError <- function(obs) {
   causes <- unique(obs)
   CSMFtruej <- table(factor(obs, levels=causes)) / length(obs)
@@ -389,6 +392,7 @@ internalGetCSMFMaxError <- function(obs) {
 #'
 #' @family internal functions
 #' @keywords internal
+#' @export
 internalGetCSMFAcc <- function(pred, obs) {
 
   # (CSMF_TruePred) Calculate CSMF by cause for observed and predicted cases
@@ -447,6 +451,7 @@ internalGetCSMFAcc <- function(pred, obs) {
 #' @importFrom methods is
 #' @family internal functions
 #' @keywords internal
+#' @export
 internalGetMetrics <- function(pred, obs, causes=unique(c(pred, obs)), csmfa.obs=NULL, causeMetrics=internalGetCauseMetrics(pred, obs, causes)) {
 
   # (Variables) Summary variables

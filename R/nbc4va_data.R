@@ -113,6 +113,7 @@
 #'
 #' @family data functions
 #' @keywords internal
+#' @export
 internalSubAsRest <- function(dataset, x, cols=1:ncol(dataset), ignore=c(NA, NaN), removal=FALSE) {
   if (length(x) != 1) stop(x, " is not a valid value (length must equal 1).")
 
@@ -183,6 +184,7 @@ internalSubAsRest <- function(dataset, x, cols=1:ncol(dataset), ignore=c(NA, NaN
 #' @importFrom utils tail
 #' @family data functions
 #' @keywords internal
+#' @export
 internalRoundFixedSum <- function (v, roundSum=round) {
   if (all(v%%1 == 0)) {
     out <- v

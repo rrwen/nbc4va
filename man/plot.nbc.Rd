@@ -51,6 +51,9 @@
 
 \item{...}{Additional arguments to be passed to \code{\link{barplot}}.}
 }
+\value{
+Generates a bar plot the top predicted causes from the NBC model
+}
 \description{
 Plots the results from a \code{\link{nbc}} object as a \code{\link{barplot}} for a number of causes based on
 predicted Cause Specific Mortality Fraction (CSMF). \cr \cr
