@@ -60,7 +60,7 @@ Developer Note: Depends on the \code{\link{internalGetCSMFAcc}} function to get 
 library(nbc4va)
 pred <- c("HIV", "Stroke", "HIV", "Stroke")
 obs <- c("HIV", "HIV", "Stroke", "Stroke")
-metrics <- nbc4va:::internalGetMetrics(pred, obs)
+metrics <- nbc4va::internalGetMetrics(pred, obs)
 
 }
 \seealso{

@@ -122,7 +122,7 @@ data(nbc4vaData)
 # Set "known" to indicate whether or not "test" causes are known
 train <- nbc4vaData[1:50, ]
 test <- nbc4vaData[51:100, ]
-results <- nbc4va:::internalNBC(train, test, known=TRUE)
+results <- nbc4va::internalNBC(train, test, known=TRUE)
 
 # Obtain the probabilities and predictions
 prob <- results$prob.causes

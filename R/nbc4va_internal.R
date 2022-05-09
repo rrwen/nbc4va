@@ -101,7 +101,7 @@
 #' # Set "known" to indicate whether or not "test" causes are known
 #' train <- nbc4vaData[1:50, ]
 #' test <- nbc4vaData[51:100, ]
-#' results <- nbc4va:::internalNBC(train, test, known=TRUE)
+#' results <- nbc4va::internalNBC(train, test, known=TRUE)
 #'
 #' # Obtain the probabilities and predictions
 #' prob <- results$prob.causes
@@ -280,7 +280,7 @@ internalNBC <- function(train, test, known=TRUE){
 #' library(nbc4va)
 #' pred <- c("HIV", "Stroke", "HIV", "Stroke")
 #' obs <- c("HIV", "HIV", "Stroke", "Stroke")
-#' cmetrics <- nbc4va:::internalGetCauseMetrics(pred, obs)
+#' cmetrics <- nbc4va::internalGetCauseMetrics(pred, obs)
 #'
 #' @family internal functions
 #' @keywords internal
@@ -364,7 +364,7 @@ internalGetCauseMetrics <- function(pred, obs, causes=unique(c(pred, obs))) {
 #' @examples
 #' library(nbc4va)
 #' obs <- c("HIV", "HIV", "Stroke", "Stroke")
-#' maxerror <- nbc4va:::internalGetCSMFMaxError(obs)
+#' maxerror <- nbc4va::internalGetCSMFMaxError(obs)
 #'
 #' @family internal functions
 #' @keywords internal
@@ -388,7 +388,7 @@ internalGetCSMFMaxError <- function(obs) {
 #' library(nbc4va)
 #' pred <- c("HIV", "Stroke", "HIV", "Stroke")
 #' obs <- c("HIV", "HIV", "Stroke", "Stroke")
-#' csmfa <- nbc4va:::internalGetCSMFAcc(pred, obs)
+#' csmfa <- nbc4va::internalGetCSMFAcc(pred, obs)
 #'
 #' @family internal functions
 #' @keywords internal
@@ -446,7 +446,7 @@ internalGetCSMFAcc <- function(pred, obs) {
 #' library(nbc4va)
 #' pred <- c("HIV", "Stroke", "HIV", "Stroke")
 #' obs <- c("HIV", "HIV", "Stroke", "Stroke")
-#' metrics <- nbc4va:::internalGetMetrics(pred, obs)
+#' metrics <- nbc4va::internalGetMetrics(pred, obs)
 #'
 #' @importFrom methods is
 #' @family internal functions

@@ -73,7 +73,7 @@ Pseudocode of algorithm:
 library(nbc4va)
 data(nbc4vaDataRaw)
 unclean <- nbc4vaDataRaw
-clean <- nbc4va:::internalSubAsRest(unclean, 99)
+clean <- nbc4va::internalSubAsRest(unclean, 99)
 
 }
 \seealso{

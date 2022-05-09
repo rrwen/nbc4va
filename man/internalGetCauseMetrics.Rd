@@ -45,7 +45,7 @@ This code is built on the original performance metrics code provided by Dr. Mire
 library(nbc4va)
 pred <- c("HIV", "Stroke", "HIV", "Stroke")
 obs <- c("HIV", "HIV", "Stroke", "Stroke")
-cmetrics <- nbc4va:::internalGetCauseMetrics(pred, obs)
+cmetrics <- nbc4va::internalGetCauseMetrics(pred, obs)
 
 }
 \seealso{

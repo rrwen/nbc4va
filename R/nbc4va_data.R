@@ -109,7 +109,7 @@
 #' library(nbc4va)
 #' data(nbc4vaDataRaw)
 #' unclean <- nbc4vaDataRaw
-#' clean <- nbc4va:::internalSubAsRest(unclean, 99)
+#' clean <- nbc4va::internalSubAsRest(unclean, 99)
 #'
 #' @family data functions
 #' @keywords internal
@@ -179,7 +179,7 @@ internalSubAsRest <- function(dataset, x, cols=1:ncol(dataset), ignore=c(NA, NaN
 #' @examples
 #' library(nbc4va)
 #' dec <- c(rep(50/2, 2), rep(50/3, 3))
-#' whole <- nbc4va:::internalRoundFixedSum(dec)
+#' whole <- nbc4va::internalRoundFixedSum(dec)
 #'
 #' @importFrom utils tail
 #' @family data functions

@@ -20,7 +20,7 @@ Rounds a vector of values to whole numbers while preserving the sum (rounded if 
 \examples{
 library(nbc4va)
 dec <- c(rep(50/2, 2), rep(50/3, 3))
-whole <- nbc4va:::internalRoundFixedSum(dec)
+whole <- nbc4va::internalRoundFixedSum(dec)
 
 }
 \references{
