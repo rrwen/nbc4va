@@ -1,13 +1,11 @@
 # nbc4va: Bayes Classifier for Verbal Autopsy Data
 
+# ggplot2 <a href="https://rrwen.github.io/nbc4va"><img src="man/figures/logo.png" align="right" height="138" alt="nbc4va website" /></a>
+
 * [Documentation](https://rrwen.github.io/nbc4va)
 * [Changes](NEWS.md)
 
 An implementation of the Naive Bayes Classifier (NBC) algorithm used for Verbal Autopsy (VA) built on code from [Miasnikof et al (2015)](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
-
-## Acknowledgements
-
-This package was developed at the Centre for Global Health Research (CGHR) in Toronto, Ontario, Canada. The original NBC algorithm code was developed by Pierre Miaskinof and Vasily Giannakeas. The original performance metrics code was provided by Dr. Mireille Gomes whom also offered guidance in metrics implementation and user testing. Special thanks to Richard Zehang Li for providing a standard structure for the package and Patrycja Kolpak for user testing of the Graphical User Interface (GUI).
 
 ## Install
 
@@ -30,7 +28,13 @@ library(nbc4va)
 nbc4vaGUI()
 ```
 
+![GUI Example](man/figures/nbcguiex.png "nbc4va GUI")
+
 For programmatic usage, see [Advanced Usage](https://rrwen.github.io/nbc4va/advanced-usage.html).
+
+## Acknowledgements
+
+This package was developed at the Centre for Global Health Research (CGHR) in Toronto, Ontario, Canada. The original NBC algorithm code was developed by Pierre Miaskinof and Vasily Giannakeas. The original performance metrics code was provided by Dr. Mireille Gomes whom also offered guidance in metrics implementation and user testing. Special thanks to Richard Zehang Li for providing a standard structure for the package and Patrycja Kolpak for user testing of the Graphical User Interface (GUI).
 
 ## Contact
 
