@@ -2,6 +2,7 @@
 
 <!-- badges: start -->
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/nbc4va)](https://cran.r-project.org/package=nbc4va)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/nbc4va)](https://cran.r-project.org/package=nbc4va)
 [![CRAN Downloads Badge](https://cranlogs.r-pkg.org/badges/nbc4va)](https://cran.r-project.org/package=nbc4va)
 <!-- badges: end -->
 
