@@ -2,12 +2,18 @@
 
 # ggplot2 <a href="https://rrwen.github.io/nbc4va"><img src="man/figures/logo.png" align="right" height="138" alt="nbc4va website" /></a>
 
-* [Documentation](https://rrwen.github.io/nbc4va)
-* [Changes](NEWS.md)
+<!-- badges: start -->
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/nbc4va)](https://cran.r-project.org/package=nbc4va)
+<!-- badges: end -->
+
+## Overview
 
 An implementation of the Naive Bayes Classifier (NBC) algorithm used for Verbal Autopsy (VA) built on code from [Miasnikof et al (2015)](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-015-0521-2).
 
-## Install
+* [Documentation](https://rrwen.github.io/nbc4va)
+* [Changes](NEWS.md)
+
+## Installation
 
 1. Install [R](https://www.r-project.org/)
 2. Install the [RStudio](https://www.rstudio.com/products/rstudio/download/#download) code editor
