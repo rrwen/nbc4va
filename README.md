@@ -38,10 +38,6 @@ nbc4vaGUI()
 
 For programmatic usage, see [Advanced Usage](https://rrwen.github.io/nbc4va/advanced-usage.html).
 
-## Acknowledgements
-
-This package was developed at the Centre for Global Health Research (CGHR) in Toronto, Ontario, Canada. The original NBC algorithm code was developed by Pierre Miaskinof and Vasily Giannakeas. The original performance metrics code was provided by Dr. Mireille Gomes whom also offered guidance in metrics implementation and user testing. Special thanks to Richard Zehang Li for providing a standard structure for the package and Patrycja Kolpak for user testing of the Graphical User Interface (GUI).
-
 ## Contact
 
 Richard Wen <rrwen.dev@gmail.com>
