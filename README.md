@@ -1,4 +1,4 @@
-# nbc4va: Bayes Classifier for Verbal Autopsy Data <a href="https://rrwen.github.io/nbc4va"><img src="man/figures/logo.png" align="right" height="138" alt="nbc4va website" /></a>
+# nbc4va <a href="https://rrwen.github.io/nbc4va"><img src="man/figures/logo.png" align="right" height="138" alt="nbc4va website" /></a>
 
 <!-- badges: start -->
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/nbc4va)](https://cran.r-project.org/package=nbc4va)
